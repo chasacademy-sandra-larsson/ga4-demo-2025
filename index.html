@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>GA4 Demo</title>
+
+  <!-- Consent Mode v2 (måste ligga före gtag.js) -->
+  <script>
+    // Default: ingen tracking tills användaren godkänner
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+  </script>
+
+  <!-- GA4 (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXX');
+  </script>
+   <link rel="stylesheet" href="./css/style.css">
+   <script src="./js/consent.js" defer></script>
+</head>
+
+<body>
+  <h1>GA4 Demo-sida</h1>
+
+  <button id="demo-btn">Köp nu</button>
+
+  <!-- Cookie-banner -->
+  <div id="cookie-banner">
+    <span>Vi använder cookies för analys. Godkänner du?</span>
+    <div>
+      <button class="accept" id="accept-cookies">Ja</button>
+      <button class="deny" id="deny-cookies">Nej</button>
+    </div>
+  </div>
+
+
+</body>
+</html>

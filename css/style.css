@@ -1,0 +1,20 @@
+    /* Enkel cookie-banner */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      padding: 15px;
+      background: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+    }
+    #cookie-banner button {
+      padding: 8px 14px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .accept { background: #4CAF50; color:white; }
+    .deny { background: #aaa; }
